@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="firstPage.css" type="text/css" rel="stylesheet" >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+
+input[type=text]:focus {
+  background-color: orange;
+}
+
+body {
+  background-color: #ffffcc;
+}
+</style>
+</head>
+<body>
+<h2>Add a new Attendees</h2>
+
+ 
+<form action="addatt.php" method="post">
+ <p>--Select a Category of the attendees--</p>
+<select name = "category">
+ <option value = "stu" selected ="selected"> Student</option>
+ <option value = "pro" selected ="selected"> Professional</option>
+ <option value = "spon" selected ="selected"> Sponsor</option>
+</select>
+<p>Enter the Full name:</p>
+<input type="text" name="name"><br>
+<p>Enter the Fee (if you are professional or a student):</p>
+<input type="text" name="rate"><br><br>
+<p>Do you need a room? (only for students)</p>
+<select name = "room">
+  <option value="yes" selected="selected"> Yes</option>
+  <option value="no" selected="selected"> No</option>
+</select>  
+<br>
+<p>Room number (4-digit): </p>
+<input type="text" name="roomnum"><br><br>
+<p> Enter the company name (if you are sponsors): </p>
+<input type="text" name="company_name"><br>
+<input type="submit">
+</form> 
+ 
+<a href="index.html">Back to Home Page</a>
+
+
+</body>
+</html>

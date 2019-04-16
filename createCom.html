@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="firstPage.css" type="text/css" rel="stylesheet" >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+
+input[type=text]:focus {
+  background-color: orange;
+}
+
+body {
+  background-color: #ffffcc;
+}
+</style>
+</head>
+<body>
+<h2>Add a new New Sponsoring Company</h2>
+
+ 
+<form action="addcom.php" method="post">
+<p>Enter the Company Name:</p>
+<input type="text" name="cname"><br>
+<p>Enter the Sponsor Level:</p>
+<select name = "category">
+ <option value = "pla" selected ="selected">Platinum</option>
+ <option value = "gol" selected ="selected">Gold</option>
+ <option value = "sil" selected ="selected">Silver</option>
+ <option value = "bro" selected ="selected">Bronze</option>
+</select>
+<br>
+<p>Enter the Sponsoring Amount:</p>
+<input type="text" name="amount"><br>
+<p>Enter the number of Used Email:</p>
+<input type="text" name="email"><br>
+<input type="submit">
+</form> 
+ 
+<a href="index.html">Back to Home Page</a>
+
+<?php include "footer.php"; ?>

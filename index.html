@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: orange;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+  -moz-column-width: 100px; /* Firefox */
+  column-width: 100px;
+}
+
+.newspaper1 {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+  -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px; /* Firefox */
+  column-rule-width: 1px;
+  -webkit-column-rule-color: orange; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: orange; /* Firefox */
+  column-rule-color: orange;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 1px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: orange;
+}
+
+body {
+  background-color: #ffffcc;
+}
+.topnav{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #e68a00;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="news.html">News</a>
+  <a href="info.html">Section Info</a>
+  <a href="about.html">About us</a>
+</div>
+
+<p><b>    </b> </p>
+<h1><b>Who are We?    </b> </h1>
+
+<div class="newspaper1">
+Build your business, boost sales and network with over 300 stakeholders from the Canadian steel industry including consultants from leading engineering and architectural firms.
+The CISC Canadian Steel Conference is the Canadian steel industry’s one and only business development and executive networking event and the largest gathering of senior level leaders and decision makers in the industry. This annual event provides a unique and targeted opportunity to profile your organization, showcase your products and services, grow sales, and build lasting business relationships.
+
+The Canadian Steel Conference will be held from September 20-21, 2018 at the Marriott Harbourfront Hotel and Queen's University in Kingston, Ontario, one of North America’s most cultural and historic cities.
+
+This exciting three day event offers a comprehensive program that is packed with multiple business development, educational, networking and social events including multi-day, multi-track education sessions, and an expanded trade show exhibit showcasing the latest products & services in the steel industry.
+
+Delegates and exhibitors can look forward to networking with over 300 attendees from the Canadian Steel industry and consultants from leading engineering and architectural firms.
+</div>
+<p><b>    </b> </p>
+
+
+
+
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<p><b>    </b> </p>
+
+
+<div class="w3-container">
+<div class="newspaper">
+
+<div style="padding-left:16px">
+<ol>
+  <li>
+    <a href="createAtt.html"><strong>Add a New Attendee</strong></a>
+  </li><br>
+  <li>
+    <a href="createCom.html"><strong>Add a New Sponsoring Company</strong></a>
+  </li><br>
+  <li>
+    <strong>List Attendees by Category</strong>
+    <ul>
+		<li><a href="student.php"><strong>Student</strong></li>
+		<li><a href="professional.php"><strong>Professional</strong></li>
+		<li><a href="sponsor.php"><strong>Sponsor</strong></li>
+	</ul><br>	
+  </li>
+  <li>
+    <a href="readroom.html"><strong>List students housed in the room</strong></a> 
+  </li><br>
+  <li>
+    <a href="readcomdel.html"><strong>Delete a Sponsoring Company</strong></a>
+  </li><br>
+  <li>
+    <a href="companyInfo.php"><strong>Display Company Information</strong></a> 
+  </li><br>
+  <li>
+    <p><strong>Display Available Jobs of Particular Company</strong></p> 
+  </li>
+  <form action="jobCompany.php" method="post">
+	<p>Please enter the Company Name:</p>
+	<input type="text" name="jobcom">
+	<input type="submit">
+	</form><br>
+  <li>
+    <a href="job.php"><strong>Display Available Jobs</strong></a> 
+  </li><br>
+  <li>
+    <a href="total.php"><strong>Show the total Intake</strong></a>
+  </li><br>
+  <li>
+	<p><strong>List all member of the particular subcommittee</strong></p>
+  </li>
+  <form action="committee.php" method="post">
+	<p>Please choose the Committee Name:</p>
+	<select name = "committee">
+	 <option value = "pro" selected ="selected">Professional Committee</option>
+	 <option value = "reg" selected ="selected">Registration Committee</option>
+	 <option value = "spon" selected ="selected">Sponsorship Committee</option>
+	</select>
+	<input type="submit">
+	</form>
+  <br>
+  
+  
+  <li>
+    <p><strong>Conference schedule</strong></p> 
+	<form action="conference.php" method="post">
+	<p>Please choose the date:</p>
+	<select name = "date">
+	 <option value = "sat" selected ="selected">Saturday</option>
+	 <option value = "sun" selected ="selected">Sunday</option>
+	 </select>
+	<input type="submit">
+	</form>
+  </li><br>
+   
+  <li>
+  <a href="readsess.html"><strong>Switch day,time,location.</strong></a>
+  </li>
+  
+  
+</ol>
+
+
+
+</body>
+</html> 
+
