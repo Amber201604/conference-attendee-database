@@ -1,4 +1,4 @@
-<h2>A undergraduate computing conference website in PHP, Mysql, CSS and HTML</h2>
+A undergraduate computing conference website in PHP, Mysql, CSS and HTML
 
 Assumption
 
