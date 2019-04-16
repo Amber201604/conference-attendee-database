@@ -1,0 +1,31 @@
+<?php include "header.php"; ?>
+<style>
+
+input[type=text]:focus {
+  background-color: orange;
+}
+
+body {
+  background-color: #ffffcc;
+}
+</style>
+    <h2>Switch a session's day, time, or location</h2>
+
+	<form action="swsession.php" method="post">
+	<p>Please enter the name of session:</p>
+	<input type="text" name="name">
+	<p>Please enter the session's day:</p>
+	<input type="text" name="day">
+	<p>Please enter the session's start time:</p>
+	<input type="text" name="stime">
+	<p>Please enter the session's end time:</p>
+	<input type="text" name="etime">
+	<p>Please enter the session's location:</p>
+	<input type="text" name="location"><br>
+	<input type="submit">
+	</form> 
+	
+    
+	<a href="index.html">Back to Home Page</a>
+    
+<?php include "footer.php"; ?>

@@ -1,0 +1,23 @@
+<?php include "header.php"; ?>
+<style>
+
+
+input[type=text]:focus {
+  background-color: orange;
+}
+
+body {
+  background-color: #ffffcc;
+}
+</style>
+
+    <h2>Delete a Company</h2>
+
+	<form action="deletecom.php" method="post">
+	<p>Please enter the Company Name:</p>
+	<input type="text" name="comid">
+	<input type="submit">
+	</form> 
+    
+	<a href="index.html">Back to Home Page</a>
+<?php include "footer.php"; ?>
